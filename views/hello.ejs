@@ -31,6 +31,15 @@
                             <input type="submit" value="Subscribe!">
                         </div>
                     </form>
+            
+            <ol>
+            <% if(post) {%>
+                <% for(var postitem of post) {%>
+                <li><%= postitem["name"] %> <%= postitem["email"] %></li>
+                <% } %>
+            <% } %>
+            </ol> 
+
 </body>
 
 </html>
